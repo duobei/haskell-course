@@ -11,3 +11,7 @@
 multi3 x = 3 * x
 
 circleArea r = pi * r ^ 2
+
+cylinderVolume r h = h * circleArea r
+
+checkCylinderVolume h r = cylinderVolume r h >= 42
